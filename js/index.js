@@ -6,13 +6,16 @@ for (const seat of seats) {
   seat.addEventListener("click", function (event) {
     count += 1;
     setElementById("selected-seat", count);
-
+    console.log(event.target.innerText);
     let totalSeat = document.getElementById("total-seat");
     let seatTotal = parseInt(totalSeat.innerText);
     console.log(parseInt);
     totalSeat.innerText = seatTotal - 1;
     const seatNo = event.target.innerText;
 
+    const clicked = document.getElementById(seatNo);
+    clicked.classList.add("bg-green-400");
+    // document.getElementById(seatNo).disabled = true;
     // seat price
 
     const seatPrice = seatPrices("seat-price");
@@ -55,13 +58,19 @@ couponBtn.addEventListener("click", function (event) {
     let grantTotalPrice = parseInt(grandTotal);
     grantTotalPrice = grantTotalPrice - grantTotalPrice * 0.15;
     setElementById("grand-total", grantTotalPrice);
-
+    input.value = "";
+    input.parentNode.classList.add("hidden");
     // coupon20
   } else if (inputText === coupon20) {
     const grandTotal = document.getElementById("grand-total").innerText;
     let grantTotalPrice = parseInt(grandTotal);
     grantTotalPrice = grantTotalPrice - grantTotalPrice * 0.2;
     setElementById("grand-total", grantTotalPrice);
+    input.value = "";
+    input.parentNode.classList.add("hidden");
+  } else {
+    alert("Please enter valid coupon code");
+    input.value = "";
   }
 });
 
