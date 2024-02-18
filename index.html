@@ -70,28 +70,29 @@
     </header>
     <main>
       <!-- banner Section Start -->
-      <section class="container mx-auto">
-        <div class="card">
-          <figure>
-            <img class="" src="./images/banner.png" />
-          </figure>
-          <div class="card-body">
-            <h2 class="raleway-font font-extrabold text-white text-6xl">
-              End-to-End Travel with
-            </h2>
-            <h2 class="raleway-font font-extrabold text-[#1DD100] text-6xl">
-              P Paribahan
-            </h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Exercitationem necessitatibus error quo veritatis nisi ullam
-              tempora id labore qui debitis. Quis vitae tenetur ea eveniet
-              aliquid molestiae explicabo sit natus!
-            </p>
-            <div class="card-actions justify-center">
-              <button class="btn btn-primary">Buy Now</button>
-            </div>
-          </div>
+      <section class="container mx-auto flex justify-center">
+        <div
+          class="bg-[url(./images/banner.png)] bg-no-repeat h-full w-3/4 object-cover p-16 text-center items-center rounded-3xl bg-cover"
+        >
+          <h1 class="raleway-font text-6xl font-extrabold text-white mb-6">
+            End-to-End Travel with
+          </h1>
+          <h1 class="raleway-font text-6xl font-extrabold text-[#1DD100] mb-6">
+            B Paribahan
+          </h1>
+          <p class="inter-font text-white mb-12">
+            You can book bus for your next trip. We have many discount 'Couple
+            Discount', 'New user Discount'. <br />
+            So why doing late? let's check it out. Click the 'Buy Tickets'
+            button
+          </p>
+          <a href="#ticket-section"
+            ><button
+              class="btn bg-[#1DD100] border-none raleway-font font-bold mb-20"
+            >
+              Buy Tickets
+            </button></a
+          >
         </div>
       </section>
 
@@ -150,6 +151,7 @@
 
       <!-- Ticket counter section -->
       <section
+        id="ticket-section"
         class="text-center bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-[88px] p-28"
       >
         <h1 class="text-4xl font-bold raleway-font mb-6">B.H Paribahan</h1>
@@ -170,11 +172,11 @@
               </div>
 
               <button class="btn bg-green-100 text-green-600">
-                <!-- total sits -->
+                <!-- total seats -->
                 <img src="./images/seat-green.png" alt="" /><span
-                  class="totalSit"
-                  >40</span
-                >
+                  id="total-seat"
+                  >8
+                </span>
                 Seats left
               </button>
             </div>
@@ -216,7 +218,9 @@
           <img class="hidden lg:flex" src="./images/info-devider.png" alt="" />
           <div class="flex flex-col justify-center items-center">
             <img src="./images/fare.png" alt="" />
-            <h1 class="text-3xl raleway-font font-bold">550 Taka</h1>
+            <h1 class="text-3xl raleway-font font-bold">
+              <span id="seat-price">550</span> Taka
+            </h1>
             <p class="text-2xl raleway-font font-semibold text-gray-500">
               Per Seat
             </p>
@@ -255,10 +259,16 @@
                   <p class="inter-font font-medium text-xl text-[#03071280]">
                     A
                   </p>
-                  <button id="A1" class="px-11 btn text-xl text-[#03071280]">
+                  <button
+                    id="A1"
+                    class="seat-plan px-11 btn text-xl text-[#03071280]"
+                  >
                     A1
                   </button>
-                  <button id="A2" class="px-11 btn text-xl text-[#03071280]">
+                  <button
+                    id="A2"
+                    class="seat-plan px-11 btn text-xl text-[#03071280]"
+                  >
                     A2
                   </button>
 
@@ -266,62 +276,44 @@
                     B
                   </p>
 
-                  <button id="B1" class="px-11 btn text-xl text-[#03071280]">
+                  <button
+                    id="B1"
+                    class="seat-plan px-11 btn text-xl text-[#03071280]"
+                  >
                     B1
                   </button>
-                  <button id="B2" class="px-11 btn text-xl text-[#03071280]">
+                  <button
+                    id="B2"
+                    class="seat-plan px-11 btn text-xl text-[#03071280]"
+                  >
                     B2
-                  </button>
-
-                  <p class="inter-font font-medium text-xl text-[#03071280]">
-                    C
-                  </p>
-
-                  <button id="C1" class="px-11 btn text-xl text-[#03071280]">
-                    C1
-                  </button>
-                  <button id="C2" class="px-11 btn text-xl text-[#03071280]">
-                    C2
-                  </button>
-
-                  <p class="inter-font font-medium text-xl text-[#03071280]">
-                    D
-                  </p>
-
-                  <button id="D1" class="px-11 btn text-xl text-[#03071280]">
-                    D1
-                  </button>
-                  <button id="D2" class="px-11 btn text-xl text-[#03071280]">
-                    D2
                   </button>
                 </div>
                 <div class="grid grid-cols-2 gap-8 items-center">
-                  <button id="A3" class="px-11 btn text-xl text-[#03071280]">
+                  <button
+                    id="A3"
+                    class="seat-plan px-11 btn text-xl text-[#03071280]"
+                  >
                     A3
                   </button>
-                  <button id="A4" class="px-11 btn text-xl text-[#03071280]">
+                  <button
+                    id="A4"
+                    class="seat-plan px-11 btn text-xl text-[#03071280]"
+                  >
                     A4
                   </button>
 
-                  <button id="B3" class="px-11 btn text-xl text-[#03071280]">
+                  <button
+                    id="B3"
+                    class="seat-plan px-11 btn text-xl text-[#03071280]"
+                  >
                     B3
                   </button>
-                  <button id="B4" class="px-11 btn text-xl text-[#03071280]">
+                  <button
+                    id="B4"
+                    class="seat-plan px-11 btn text-xl text-[#03071280]"
+                  >
                     B4
-                  </button>
-
-                  <button id="C3" class="px-11 btn text-xl text-[#03071280]">
-                    C3
-                  </button>
-                  <button id="C4" class="px-11 btn text-xl text-[#03071280]">
-                    C4
-                  </button>
-
-                  <button id="D3" class="px-11 btn text-xl text-[#03071280]">
-                    D3
-                  </button>
-                  <button id="D4" class="px-11 btn text-xl text-[#03071280]">
-                    D4
                   </button>
                 </div>
               </div>
@@ -345,42 +337,23 @@
                     <th>
                       Seat
                       <span
-                        id="selected-sit"
+                        id="selected-seat"
                         class="bg-[#1DD100] rounded-xl p-1 text-white"
-                        >1</span
+                        >0</span
                       >
                     </th>
                     <th>Class</th>
                     <th>Price</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <!-- row 1 -->
-                  <tr>
-                    <!-- <td>Cy Ganderton</td>
-                    <td>Quality Control Specialist</td>
-                    <td>Blue</td> -->
-                  </tr>
-                  <!-- row 2 -->
-                  <tr>
-                    <!-- <td>Hart Hagerty</td>
-                    <td>Desktop Support Technician</td>
-                    <td>Purple</td> -->
-                  </tr>
-                  <!-- row 3 -->
-                  <tr>
-                    <!-- <td>Brice Swyre</td>
-                    <td>Tax Accountant</td>
-                    <td>Red</td> -->
-                  </tr>
-                </tbody>
+                <tbody id="ticket-details"></tbody>
               </table>
               <br />
               <div class="flex justify-between">
                 <p class="inter-font font-medium">Total Price</p>
                 <!-- Total price -->
                 <p class="inter-font font-medium">
-                  BDT <span id="total-price"></span>
+                  BDT <span id="total-price">0</span>
                 </p>
               </div>
               <!-- Coupon  -->
@@ -391,14 +364,14 @@
                   type="text"
                   placeholder="Any Coupon?"
                 />
-                <button class="btn bg-[#1DD100]">Apply</button>
+                <button id="coupon-btn" class="btn bg-[#1DD100]">Apply</button>
               </div>
 
               <div class="flex justify-between mt-4">
                 <p class="inter-font font-medium">Grand Total</p>
                 <!-- Grand Total -->
                 <p class="inter-font font-medium">
-                  BDT <span id="grand-total"></span>
+                  BDT <span id="grand-total">0</span>
                 </p>
               </div>
             </div>
@@ -412,5 +385,6 @@
     </main>
 
     <footer></footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>
