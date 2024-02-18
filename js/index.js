@@ -3,20 +3,28 @@ const seats = document.getElementsByClassName("seat-plan");
 let count = 0;
 
 for (const seat of seats) {
-  seat.addEventListener("click", function (event) {
+  seat.addEventListener("click", myFunction);
+
+  function myFunction(event) {
     count += 1;
+
+    if (count === 4) {
+      for (const seat of seats) {
+        seat.disabled = true;
+      }
+    }
+
+    const clicked = event.target;
+
+    clicked.style.backgroundColor = "#1DD100";
+    clicked.disabled = true;
+
     setElementById("selected-seat", count);
     console.log(event.target.innerText);
     let totalSeat = document.getElementById("total-seat");
     let seatTotal = parseInt(totalSeat.innerText);
-    console.log(parseInt);
     totalSeat.innerText = seatTotal - 1;
     const seatNo = event.target.innerText;
-
-    const clicked = document.getElementById(seatNo);
-    clicked.classList.add("bg-green-400");
-    // document.getElementById(seatNo).disabled = true;
-    // seat price
 
     const seatPrice = seatPrices("seat-price");
     const ticketDetails = document.getElementById("ticket-details");
@@ -41,7 +49,7 @@ for (const seat of seats) {
     const grandTotal = document.getElementById("grand-total").innerText;
     const grantTotalPrice = parseInt(grandTotal);
     setElementById("grand-total", grantTotalPrice + seatPrice);
-  });
+  }
 }
 const couponBtn = document.getElementById("coupon-btn");
 // Coupon discount
