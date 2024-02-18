@@ -71,12 +71,17 @@
     <main>
       <!-- banner Section Start -->
       <section class="container mx-auto">
-        <!-- <div class="card bg-base-100 image-full">
+        <div class="card">
           <figure>
             <img class="" src="./images/banner.png" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="raleway-font font-extrabold text-white text-6xl">
+              End-to-End Travel with
+            </h2>
+            <h2 class="raleway-font font-extrabold text-[#1DD100] text-6xl">
+              P Paribahan
+            </h2>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Exercitationem necessitatibus error quo veritatis nisi ullam
@@ -87,7 +92,7 @@
               <button class="btn btn-primary">Buy Now</button>
             </div>
           </div>
-        </div> -->
+        </div>
       </section>
 
       <!-- Coupon Card Section -->
@@ -219,60 +224,193 @@
         </div>
 
         <!-- Ticket counter -->
+        <!-- Parent -->
+        <div class="flex">
+          <!-- Left side -->
+          <div class="bg-white mt-6 rounded-2xl">
+            <div class="">
+              <h2
+                class="text-2xl raleway-font font-semibold border-dashed border-b-2 p-5 text-start"
+              >
+                Select Your Seat
+              </h2>
+              <div class="border-dashed border-b-2 flex justify-between p-5">
+                <p class="flex">
+                  <img src="./images/seat-gray.png" /> Available
+                </p>
+                <p class="flex">
+                  <img src="./images/seat-green-filled.png" /> Selected
+                </p>
+              </div>
+            </div>
 
-        <div class="bg-white mt-6 rounded-2xl">
-          <div class="">
+            <div class="p-6">
+              <div class="mb-8 flex justify-end">
+                <button class="btn px-10">
+                  <img src="./images/wheel.svg" alt="" />
+                </button>
+              </div>
+              <div class="flex gap-12">
+                <div class="grid grid-cols-3 gap-8 items-center">
+                  <p class="inter-font font-medium text-xl text-[#03071280]">
+                    A
+                  </p>
+                  <button id="A1" class="px-11 btn text-xl text-[#03071280]">
+                    A1
+                  </button>
+                  <button id="A2" class="px-11 btn text-xl text-[#03071280]">
+                    A2
+                  </button>
+
+                  <p class="inter-font font-medium text-xl text-[#03071280]">
+                    B
+                  </p>
+
+                  <button id="B1" class="px-11 btn text-xl text-[#03071280]">
+                    B1
+                  </button>
+                  <button id="B2" class="px-11 btn text-xl text-[#03071280]">
+                    B2
+                  </button>
+
+                  <p class="inter-font font-medium text-xl text-[#03071280]">
+                    C
+                  </p>
+
+                  <button id="C1" class="px-11 btn text-xl text-[#03071280]">
+                    C1
+                  </button>
+                  <button id="C2" class="px-11 btn text-xl text-[#03071280]">
+                    C2
+                  </button>
+
+                  <p class="inter-font font-medium text-xl text-[#03071280]">
+                    D
+                  </p>
+
+                  <button id="D1" class="px-11 btn text-xl text-[#03071280]">
+                    D1
+                  </button>
+                  <button id="D2" class="px-11 btn text-xl text-[#03071280]">
+                    D2
+                  </button>
+                </div>
+                <div class="grid grid-cols-2 gap-8 items-center">
+                  <button id="A3" class="px-11 btn text-xl text-[#03071280]">
+                    A3
+                  </button>
+                  <button id="A4" class="px-11 btn text-xl text-[#03071280]">
+                    A4
+                  </button>
+
+                  <button id="B3" class="px-11 btn text-xl text-[#03071280]">
+                    B3
+                  </button>
+                  <button id="B4" class="px-11 btn text-xl text-[#03071280]">
+                    B4
+                  </button>
+
+                  <button id="C3" class="px-11 btn text-xl text-[#03071280]">
+                    C3
+                  </button>
+                  <button id="C4" class="px-11 btn text-xl text-[#03071280]">
+                    C4
+                  </button>
+
+                  <button id="D3" class="px-11 btn text-xl text-[#03071280]">
+                    D3
+                  </button>
+                  <button id="D4" class="px-11 btn text-xl text-[#03071280]">
+                    D4
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Left side end -->
+          <!-- Right side start -->
+          <div class="rounded-2xl flex-1 mt-6 bg-white">
             <h2
-              class="text-2xl raleway-font font-semibold border-dashed border-b-2 p-5"
+              class="text-2xl raleway-font font-semibold border-dashed border-b-2 p-5 text-start"
             >
-              Select Your Sit
+              Select Your Seat
             </h2>
-            <div class="border-dashed border-b-2 flex justify-between p-5">
-              <p class="flex"><img src="./images/seat-gray.png" /> Available</p>
-              <p class="flex">
-                <img src="./images/seat-green-filled.png" /> Selected
-              </p>
+
+            <div class="overflow-x-auto bg-[#F7F8F8] m-8 p-8">
+              <table class="table">
+                <!-- head -->
+                <thead>
+                  <tr>
+                    <!-- Select sit Count` -->
+                    <th>
+                      Seat
+                      <span
+                        id="selected-sit"
+                        class="bg-[#1DD100] rounded-xl p-1 text-white"
+                        >1</span
+                      >
+                    </th>
+                    <th>Class</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- row 1 -->
+                  <tr>
+                    <!-- <td>Cy Ganderton</td>
+                    <td>Quality Control Specialist</td>
+                    <td>Blue</td> -->
+                  </tr>
+                  <!-- row 2 -->
+                  <tr>
+                    <!-- <td>Hart Hagerty</td>
+                    <td>Desktop Support Technician</td>
+                    <td>Purple</td> -->
+                  </tr>
+                  <!-- row 3 -->
+                  <tr>
+                    <!-- <td>Brice Swyre</td>
+                    <td>Tax Accountant</td>
+                    <td>Red</td> -->
+                  </tr>
+                </tbody>
+              </table>
+              <br />
+              <div class="flex justify-between">
+                <p class="inter-font font-medium">Total Price</p>
+                <!-- Total price -->
+                <p class="inter-font font-medium">
+                  BDT <span id="total-price"></span>
+                </p>
+              </div>
+              <!-- Coupon  -->
+              <div class="p-5 flex items-center mt-4">
+                <input
+                  class="p-5 flex w-full rounded-xl"
+                  id="input-coupon"
+                  type="text"
+                  placeholder="Any Coupon?"
+                />
+                <button class="btn bg-[#1DD100]">Apply</button>
+              </div>
+
+              <div class="flex justify-between mt-4">
+                <p class="inter-font font-medium">Grand Total</p>
+                <!-- Grand Total -->
+                <p class="inter-font font-medium">
+                  BDT <span id="grand-total"></span>
+                </p>
+              </div>
+            </div>
+            <div class="p-10">
+              <button class="btn w-full bg-[#1DD100]">Next</button>
             </div>
           </div>
-          <div class="flex gap-12">
-            <div class="grid grid-cols-3 gap-8 items-center">
-              <p class="inter-font font-medium text-xl text-[#03071280]">A</p>
-              <button id="A1" class="btn text-xl text-[#03071280]">A1</button>
-              <button id="A2" class="btn text-xl text-[#03071280]">A2</button>
-
-              <p class="inter-font font-medium text-xl text-[#03071280]">B</p>
-
-              <button id="B1" class="btn text-xl text-[#03071280]">B1</button>
-              <button id="B2" class="btn text-xl text-[#03071280]">B2</button>
-
-              <p class="inter-font font-medium text-xl text-[#03071280]">C</p>
-
-              <button id="C1" class="btn text-xl text-[#03071280]">C1</button>
-              <button id="C2" class="btn text-xl text-[#03071280]">C2</button>
-
-              <p class="inter-font font-medium text-xl text-[#03071280]">D</p>
-
-              <button id="D1" class="btn text-xl text-[#03071280]">D1</button>
-              <button id="D2" class="btn text-xl text-[#03071280]">D2</button>
-            </div>
-            <div class="grid grid-cols-2 gap-8 items-center">
-              <button id="A3" class="btn text-xl text-[#03071280]">A3</button>
-              <button id="A4" class="btn text-xl text-[#03071280]">A4</button>
-
-              <button id="B3" class="btn text-xl text-[#03071280]">B3</button>
-              <button id="B4" class="btn text-xl text-[#03071280]">B4</button>
-
-              <button id="C3" class="btn text-xl text-[#03071280]">C3</button>
-              <button id="C4" class="btn text-xl text-[#03071280]">C4</button>
-
-              <button id="D3" class="btn text-xl text-[#03071280]">D3</button>
-              <button id="D4" class="btn text-xl text-[#03071280]">D4</button>
-            </div>
-          </div>
+          <!-- right side end` -->
         </div>
-        <div class=""></div>
       </section>
     </main>
+
     <footer></footer>
   </body>
 </html>
